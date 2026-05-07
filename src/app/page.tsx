@@ -3,7 +3,7 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import ContactCTA from '@/components/sections/contact/ContactCTA';
-import FeatureCardTwentyThree from '@/components/sections/feature/FeatureCardTwentyThree';
+import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import HeroSplitDoubleCarousel from '@/components/sections/hero/HeroSplitDoubleCarousel';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
@@ -30,11 +30,16 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarLayoutFloatingOverlay
       navItems={[
-        { name: "Home", id: "hero" },
-        { name: "About", id: "about" },
-        { name: "Services", id: "features" },
-        { name: "Projects", id: "products" },
-        { name: "Contact", id: "contact" },
+        {
+          name: "Home",          id: "hero"},
+        {
+          name: "About",          id: "about"},
+        {
+          name: "Services",          id: "features"},
+        {
+          name: "Projects",          id: "products"},
+        {
+          name: "Contact",          id: "contact"},
       ]}
       brandName="Vision Vault"
     />
@@ -42,7 +47,8 @@ export default function LandingPage() {
 
   <div id="hero" data-section="hero">
       <HeroSplitDoubleCarousel
-      background={{ variant: "gradient-bars" }}
+      background={{
+        variant: "gradient-bars"}}
       title="Defining the Future of Digital Presence"
       description="Vision Vault Media crafts immersive digital experiences that capture the essence of modern innovation. We build, design, and redefine brands for the next generation."
       leftCarouselItems={[
@@ -73,41 +79,22 @@ export default function LandingPage() {
       useInvertedBackground={false}
       title="Built for Visionaries"
       description={[
-        "We are a team of passionate creators, developers, and thinkers. At Vision Vault, we believe that design should never be an afterthought, but the primary language of your brand.",        "Our mission is to help companies bridge the gap between their vision and reality through meticulous execution and high-performance engineering."
-      ]}
+        "We are a team of passionate creators, developers, and thinkers. At Vision Vault, we believe that design should never be an afterthought, but the primary language of your brand.",        "Our mission is to help companies bridge the gap between their vision and reality through meticulous execution and high-performance engineering."]}
     />
   </div>
 
   <div id="features" data-section="features">
-      <FeatureCardTwentyThree
-      animationType="scale-rotate"
+      <FeatureCardSeven
+      animationType="slide-up"
       textboxLayout="split"
       useInvertedBackground={false}
+      features={[
+        { title: "Web Development", description: "High-speed, scalable web platforms built on the modern stack.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DBf69E7h9WAlw2JUCQiE4hCJae/modern-architectural-visual-abstract-hig-1778117866641-0f1d68ac.png" },
+        { title: "Digital Strategy", description: "Data-driven marketing and growth strategies that resonate.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DBf69E7h9WAlw2JUCQiE4hCJae/professional-web-design-studio-aesthetic-1778117878428-f97d2515.png" },
+        { title: "UX/UI Design", description: "Crafting intuitive and elegant interfaces that users love.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DBf69E7h9WAlw2JUCQiE4hCJae/abstract-data-network-nodes-neon-subtle--1778117889389-5008d6a8.png" },
+      ]}
       title="Mastery in Motion"
       description="Our core services are designed to move the needle and elevate your market position."
-      features={[
-        { 
-            id: "1", 
-            title: "Web Development", 
-            tags: ["3D Interactive", "React", "High-Performance"],
-            imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DBf69E7h9WAlw2JUCQiE4hCJae/modern-architectural-visual-abstract-hig-1778117866641-0f1d68ac.png", 
-            onFeatureClick: () => console.log("Web Dev Interaction")
-        },
-        { 
-            id: "2", 
-            title: "Digital Strategy", 
-            tags: ["3D Interactive", "Data-Driven", "Growth"],
-            imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DBf69E7h9WAlw2JUCQiE4hCJae/professional-web-design-studio-aesthetic-1778117878428-f97d2515.png", 
-            onFeatureClick: () => console.log("Digital Strategy Interaction")
-        },
-        { 
-            id: "3", 
-            title: "UX/UI Design", 
-            tags: ["3D Interactive", "Human-Centric", "Elegant"],
-            imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DBf69E7h9WAlw2JUCQiE4hCJae/abstract-data-network-nodes-neon-subtle--1778117889389-5008d6a8.png", 
-            onFeatureClick: () => console.log("UX/UI Design Interaction")
-        }
-      ]}
     />
   </div>
 
