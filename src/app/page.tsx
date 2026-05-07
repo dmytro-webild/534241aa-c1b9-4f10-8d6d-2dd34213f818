@@ -121,7 +121,7 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       team={[
-        { id: "1", name: "Alex Rivet", role: "Creative Director", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DBf69E7h9WAlw2JUCQiE4hCJae/modern-architectural-visual-abstract-hig-1778117955849-94dde044.jpg" },
+        { id: "1", name: "Yacine Loe", role: "Creative Director", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DBf69E7h9WAlw2JUCQiE4hCJae/modern-architectural-visual-abstract-hig-1778117955849-94dde044.jpg" },
         { id: "2", name: "Maya Chen", role: "Lead Architect", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DBf69E7h9WAlw2JUCQiE4hCJae/professional-web-design-studio-aesthetic-1778117964429-a65f92f8.png" },
       ]}
       title="The Minds Behind the Vault"
