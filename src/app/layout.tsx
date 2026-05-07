@@ -10,7 +10,7 @@ import { DM_Sans } from "next/font/google";
 
 
 export const metadata: Metadata = {
-  title: "Vision Vault Media | Sleek Web Agency",
+  title: "Vision Vault Media ",
   description: "Vision Vault Media is a premium web agency creating high-end digital experiences, sleek interfaces, and innovative solutions for visionaries.",
 };
 
