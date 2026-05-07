@@ -65,7 +65,7 @@ export default function LandingPage() {
         { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DBf69E7h9WAlw2JUCQiE4hCJae/modern-architectural-visual-abstract-hig-1778117831557-7db80019.png", imageAlt: "Digital Innovation" },
         { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DBf69E7h9WAlw2JUCQiE4hCJae/architectural-interior-view-modern-desig-1778117840599-646732cc.png", imageAlt: "Modern Concrete" },
       ]}
-      buttons={[{ text: "Start Project", href: "#contact" }]}
+      buttons={[{ text: "Start Project", href: "/contact" }]}
       avatars={[
         { src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DBf69E7h9WAlw2JUCQiE4hCJae/high-end-corporate-headshots-professiona-1778117847890-f7ad5b0c.png", alt: "Team Member 1" },
         { src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DBf69E7h9WAlw2JUCQiE4hCJae/luxury-creative-design-display-digital-w-1778117858750-73a7b2dc.png", alt: "Team Member 2" },
@@ -146,16 +146,16 @@ export default function LandingPage() {
       tag="Get in Touch"
       title="Ready to Build?"
       description="Let's start your project and push the boundaries of what's possible."
-      buttons={[{ text: "Contact Us", href: "#" }]}
+      buttons={[{ text: "Contact Us", href: "/contact" }]}
     />
   </div>
 
   <div id="footer" data-section="footer">
       <FooterBase
       columns={[
-        { title: "Company", items: [{ label: "About", href: "#about" }, { label: "Services", href: "#features" }] },
-        { title: "Work", items: [{ label: "Projects", href: "#products" }] },
-        { title: "Legal", items: [{ label: "Privacy", href: "#" }, { label: "Terms", href: "#" }] },
+        { title: "Company", items: [{ label: "About", href: "/#about" }, { label: "Services", href: "/#features" }] },
+        { title: "Work", items: [{ label: "Projects", href: "/#products" }] },
+        { title: "Legal", items: [{ label: "Privacy", href: "/#" }, { label: "Terms", href: "/#" }] },
       ]}
       logoText="Vision Vault Media"
     />
